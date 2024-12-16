@@ -1,4 +1,4 @@
-import styles from "../styles/photoCard.module.css"
+import styles from "../styles/PhotoCard.module.css"
 import Image from "next/image"
 import photo from "../assets/House-photo.svg"
 import ellipse from "../assets/Ellipse.svg"

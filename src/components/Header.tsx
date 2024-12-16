@@ -1,5 +1,5 @@
 import Image from "next/image"
-import styles from "../styles/header.module.css"
+import styles from "../styles/Header.module.css"
 import { Button } from "./Button"
 import Logo from "../assets/Logo.svg"
 import Logo2 from "../assets/Logo2.svg"
