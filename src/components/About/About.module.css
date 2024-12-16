@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 16px; /* Added padding for better spacing on smaller screens */
 }
 
 .textContainer {
@@ -24,32 +25,56 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    text-align: left;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
+    text-decoration: underline;
     color: rgba(249, 214, 128, 1);
+    cursor: pointer; /* Added for better interaction */
 }
 
 .buttonsContainer {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    justify-content: center; /* Centers buttons when wrapped */
+    align-items: center; /* Aligns buttons properly */
 }
 
+/* Responsive Styling */
 @media (max-width: 1024px) {
+    .aboutContainer {
+        gap: 24px;
+    }
+
     .textContainer ol {
         font-size: 14px;
         line-height: 21px;
-    }
-
-    .buttonsContainer {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        margin-left: 16px; /* Reduced margin for better fit */
     }
 
     .linkSpan {
         font-size: 14px;
         line-height: 21px;
-        color: rgba(136, 136, 136, 1);
+        color: rgba(136, 136, 136, 1); /* Subtle color change for readability */
         font-weight: 500;
+    }
+
+    .buttonsContainer {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .textContainer ol {
+        font-size: 13px;
+        line-height: 20px;
+        margin-left: 12px; /* Further reduced for very small screens */
+    }
+
+    .linkSpan {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .buttonsContainer {
+        gap: 8px;
     }
 }

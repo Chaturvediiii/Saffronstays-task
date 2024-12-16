@@ -2,6 +2,8 @@
     margin-top: 24px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 16px; /* Added padding for better spacing */
 }
 
 .ratingContainer {
@@ -13,26 +15,26 @@
 
 .ratingContainer div {
     display: flex;
-    gap: 14px;
+    gap: 8px; /* Reduced gap for better alignment */
+    align-items: center; /* Ensures text and icon align vertically */
 }
 
 .ratingContainer span {
     color: rgba(102, 102, 102, 1);
     font-weight: 200;
-    font-size: 21px;
+    font-size: 16px; /* Slightly smaller for better balance */
 }
 
 .ratingCount {
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-
+    text-decoration: underline;
 }
 
 .ratingText {
     display: flex;
+    align-items: center;
     gap: 4px;
     font-size: 16px;
     font-weight: 700;
@@ -47,7 +49,8 @@
 
 .iconsDiv {
     display: flex;
-    gap: 20px;
+    gap: 16px;
+    align-items: center;
 }
 
 .icon {
@@ -55,9 +58,29 @@
     width: 40px;
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(240, 240, 240, 1); 
+    transition: background-color 0.3s ease; /* Optional: Add hover effect */
+}
+
+.icon:hover {
+    background-color: rgba(220, 220, 220, 1); /* Slightly darker on hover */
 }
 
 @media (max-width: 1024px) {
+    .reviewContainer {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .iconsDiv {
+        justify-content: space-between; /* Ensure even spacing */
+        width: 100%;
+    }
+
     .icon {
         height: 35px;
         width: 35px;
