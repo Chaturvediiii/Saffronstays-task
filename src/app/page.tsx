@@ -1,20 +1,20 @@
 'use client'
 
 import styles from "./page.module.css";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { Reviews } from "@/components/Reviews";
-import { AboutIconsList } from "@/components/AboutIconsList";
-import { About } from "@/components/About";
-import { Amenities } from "@/components/Amenities";
-import { Meals } from "@/components/Meals";
-import { List } from "@/components/List";
-import { Location } from "@/components/Location";
-import { Footer } from "@/components/Footer";
-import { HouseDetails } from "@/components/HouseDetails";
-import { PhotoCard } from "@/components/PhotoCard";
-import { Form } from "@/components/Form";
-import { MobileForm } from "@/components/MobileForm";
+import { Header } from "@/components/Header/Header";
+import { Hero } from "@/components/Hero/Hero";
+import { Reviews } from "@/components/Reviews/Reviews";
+import { AboutIconsList } from "@/components/AboutIconsList/AboutIconsList";
+import { About } from "@/components/About/About";
+import { Amenities } from "@/components/Amenities/Amenities";
+import { Meals } from "@/components/Meals/Meals";
+import { List } from "@/components/List/List";
+import { Location } from "@/components/Location/Location";
+import { Footer } from "@/components/Footer/Footer";
+import { HouseDetails } from "@/components/HouseDetails/HouseDetails";
+import { PhotoCard } from "@/components/PhotoCard/PhotoCard";
+import { Form } from "@/components/Form/Form";
+import { MobileForm } from "@/components/MobileForm/MobileForm";
 
 
 export default function Home() {

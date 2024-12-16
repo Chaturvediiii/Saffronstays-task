@@ -1,0 +1,31 @@
+.amenitiesContainer {
+    width: 497px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.listContainer {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+    gap: 20px;   
+    justify-content: space-between;
+}
+
+.listItem {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgba(136, 136, 136, 1);
+}
+
+@media (max-width: 1024px) {
+    .listItem {
+        font-size: 14px;
+    }
+
+    .amenitiesContainer {
+        width: 100%;
+    }
+}
