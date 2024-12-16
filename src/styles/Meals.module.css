@@ -1,0 +1,42 @@
+.mealsContainer {
+    width: 578px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mealsContainer p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(136, 136, 136, 1);
+}
+
+.optionsContainer {
+    display: flex;
+    gap: 46px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.option {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 16px;
+}
+
+@media (max-width: 1024px) {
+    .mealsContainer {
+        width: 100%;
+    }
+    .mealsContainer p {
+        font-size: 14px;
+    }
+}

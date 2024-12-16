@@ -1,0 +1,30 @@
+.iconsContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.iconDiv {
+    display: flex;
+    gap: 10px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: rgba(187, 187, 187, 1);
+}
+
+@media (max-width: 1024px) {
+    .iconsContainer {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .iconDiv {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}

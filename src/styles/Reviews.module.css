@@ -1,0 +1,65 @@
+.reviewContainer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratingContainer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: rgba(153, 153, 153, 1);
+}
+
+.ratingContainer div {
+    display: flex;
+    gap: 14px;
+}
+
+.ratingContainer span {
+    color: rgba(102, 102, 102, 1);
+    font-weight: 200;
+    font-size: 21px;
+}
+
+.ratingCount {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+
+}
+
+.ratingText {
+    display: flex;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.ratingText span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.iconsDiv {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+}
